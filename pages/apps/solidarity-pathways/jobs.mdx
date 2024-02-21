@@ -1,0 +1,23 @@
+# Jobs & Clients
+
+We use jobs to represent the individual stops needing to be done within a route plan. Each job
+has the option to assign a client to it. This allows you to quickly track client history for later.
+
+**Jobs** ae the individual (deliveries, pickups, maintainence, administrative ) that need to be made in a route plan.
+These include the time window in which the job needs to be done, the location, the prep time, the service time, and the priority.
+
+**Clients** are the people or businesses that the jobs are being done for. You can assign multiple jobs to a client, or none at all.
+Clients have a name, default address, a phone number, and an email (required).
+
+When uploading a stop CSV file, you can assign a client to the stop by adding the email address of the saved client.
+If you don't have a client saved with that email, you will be prompted to create a new client with that email.
+
+When uploading a client CSV file, you can assign a default job to the client by adding the details in addition to the basic
+client info.
+
+If you have the name of the client and email in the stop csv, it automatically assigns or creates the client.
+
+- Client csv with job info (Creates new clients and assigns a default job to the client)
+- Client csv without job info (Creates new clients)
+- Stop csv with client email (Assigns the client to the stop)
+- Stop csv with client email and name (Creates new clients and assigns the client to the stop)

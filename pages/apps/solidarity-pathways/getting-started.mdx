@@ -1,0 +1,83 @@
+# Getting Started
+
+import { Callout } from "nextra/components";
+
+<Callout type="info" emoji="ℹ️">
+	Currently, we are only offering this application to our existing artisans. Check back soon for updates!
+</Callout>
+
+<Callout type="info" emoji="ℹ️">
+	Sandbox mode is currently in development. Check back soon for updates!
+</Callout>
+
+Navigate to the [Solidarity Pathways application](https://artisanalfutures/tools/solidarity-pathways) and sign in with your credentials.
+
+## Creating a Depot
+
+Depots are how artisans manage their drivers, customers, and route plans. Each depot has:
+
+- A name
+- A magic code which allows drivers to access the generated route plans
+- A depot address
+
+![Hello](/create-depot.png)
+
+You are able to skip this step and head straight into the sandbox mode to try out the application and generate your routes via a CSV.
+
+## New Users
+
+New users are welcomed to the onboarding page. From here, you are able to upload your drivers, customers, and
+stops as well as create a route on any specific day. You can also just skip this step and create a new route manually.
+
+![Onboarding](/onboarding.png)
+
+## Adding drivers
+
+You are able to add drivers to your depot. Each driver then can be added to a route. You can upload a CSV file of your drivers
+with their default values or add them manually. Check out the [CSV template](/driver-template.csv) for the correct format.
+
+<Callout type="info" emoji="ℹ️">
+	Drivers need an email and phone number in order to be saved to the depot
+</Callout>
+
+## Adding stops and clients
+
+You are able to create a new route by manually adding stops or uploading them. Check out the [CSV template](/job-template.csv) for the correct format.
+
+<Callout type="info" emoji="ℹ️">
+	If you add your client's info to the stop, they will be automatically saved to depot if they are not already in the
+	depot.
+</Callout>
+
+## Creating a route
+
+When creating a route, you need to have at least a driver and some stops. If you missed adding a driver or stops,
+you can add them on the route page as well. You can also add previous stops to the route if you missed them.
+
+![Routing Page](/routing.png)
+
+If you are trying to find a specific stop, you are able to search for them from within the route.
+
+For both drivers and stops, you are able to manage your existing drivers and stops from the route page. Any changes
+made will only be reflected on the route and not the depot unless you specify to update the depot info and defaults as well.
+
+![Manage Drivers](/manage-drivers.png)
+
+Same for creating, you can just add to the existing route, or save to the depot for future use.
+![Create Drivers](/create-drivers.png)
+
+Once you add your drivers and stops, you are able to generate the route. The route will be generated based on what
+each driver's threshold is and the stops that are available. Make sure to double check the driver and stops before
+generating.
+
+![Draft](/draft-route.png)
+
+You are now left with optimized routing paths for your drivers. You can send them directly to the drivers, make modifications
+to the stops that didn't quite make it into the route, or monitor the progess of the paths once they are initiated by
+the driver.
+
+![Generated](/generated-paths.png)
+
+![PathView](/path-view.png)
+
+## Drivers

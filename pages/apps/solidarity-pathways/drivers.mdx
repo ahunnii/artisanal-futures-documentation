@@ -1,0 +1,40 @@
+# Drivers & Vehicles
+
+In Solidarity Pathways, we use driver and vehicle information to help us better calculate the
+most optimal path.
+
+**Drivers** are the people who drive the vehicles. They have a name, a phone number to text them
+updates and new routes, an email, and a default address.
+
+**Vehicles** are the driver's stats used to calculate which driver can take which route.
+These have a starting and ending location, max number of stops, max distance, max travel time,
+the start of the workday, and the end of the workday, as well as breaks.
+
+Each driver has a vehicle default. These values are used when adding the driver to the routing plan.
+
+- You are able to update the driver's personal information: **INSERT WHERE HERE**
+- You are able to update the driver's default values: **INSERT WHERE HERE**
+
+Each vehicle associated with a routing plan NEEDS a driver. This is so you can send out updates to the driver
+when the route changes, or when the driver needs to be notified of a new route, as well as keeping track of the current route
+via messaging in app.
+
+When uploading a driver's CSV, you are able to specify the driver's defaults as well. If you decide to not specify the driver's defaults,
+we will use the following defaults for the driver:
+
+- Max number of stops: 10
+- Max distance: 100 miles
+- Max travel time: 8 hours
+- Start of workday: 8:00 AM
+- End of workday: 5:00 PM
+- Breaks: 1 hour
+
+When uploading a vehicle's CSV, you are able to specify the vehicle's defaults as well. If you decide to not specify the vehicle's defaults,
+
+## Developer Notes
+
+TODO List:
+
+- [ ] Add the ability to assign default values to new driver CSV uploads if none are provided
+- [ ] Add ability to reassign a driver to a vehicle
+- [ ] Add ability to add a 'temp driver status' to a vehicle when a driver is deleted
