@@ -2,8 +2,8 @@
 	"index": "Introduction",
 	"criteria": "New Member Criteria",
 
-	"another": "Another Page",
-	"advanced": "Advanced (A Folder)",
+	"apps": "Apps",
+	"developers": "Developers",
 
 	"about": {
 		"title": "Site",
@@ -11,8 +11,6 @@
 		"href": "https://artisanalfutures.org",
 		"newWindow": true
 	},
-
-	"apps": "Apps",
 
 	"contact": {
 		"title": "Contact ↗",
