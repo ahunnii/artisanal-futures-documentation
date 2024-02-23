@@ -3,6 +3,13 @@ import React from "react";
 
 const config: DocsThemeConfig = {
 	logo: <span>Artisanal Futures</span>,
+
+	useNextSeoProps() {
+		return {
+			titleTemplate: "%s - Artisanal Futures Docs",
+		};
+	},
+
 	project: {
 		link: "https://github.com/ahunnii/artisanal-futures",
 	},
